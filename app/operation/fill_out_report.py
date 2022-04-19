@@ -48,7 +48,7 @@ def fill_out_reports() -> None:
                        annual_net_revenue=annual_net_revenue,
                        product_value=PRODUCT_VALUE)
         stock -= num_units_sold_month
-        restocking = NUMBER_OF_SALES_PER_MONTH[i + 1] if (i+1 < NUMBER_OF_MONTHS) else 0
+        restocking = NUMBER_OF_SALES_PER_MONTH[i+1] if (i+1 < NUMBER_OF_MONTHS) else 0
         stock += restocking
         if annual_net_revenue >= 0 and (annual_net_revenue - monthly_net_revenue) < 0:
             break_even_month = MONTHS[i]
