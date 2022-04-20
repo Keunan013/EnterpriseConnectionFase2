@@ -1,10 +1,10 @@
 from app.operation.create_report import monthly_report, annual_report
 from app.util.validator import is_january
 
-MONTHS = 'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+MONTHS = ('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro')
 NUMBER_OF_MONTHS = len(MONTHS)
-BASE_COST_PER_MONTH = 30.0, 25.0, 35.0, 43.0, 32.0, 32.0, 32.0, 34.0, 45.0, 30.0, 33.0, 35.0
-NUMBER_OF_SALES_PER_MONTH = 225, 300, 333, 352, 145, 842, 144, 752, 520, 222, 127, 333
+BASE_COST_PER_MONTH = (30.0, 25.0, 35.0, 43.0, 32.0, 32.0, 32.0, 34.0, 45.0, 30.0, 33.0, 35.0)
+NUMBER_OF_SALES_PER_MONTH = (225, 300, 333, 352, 145, 842, 144, 752, 520, 222, 127, 333)
 PRODUCT_VALUE = 50.0
 INITIAL_STOCK = 1000
 
